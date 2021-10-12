@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mide tus reflejos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <nav>
+            <div class="data">
+                <p>Tu puntuación es: <span id="score">0</span></p>
+            </div>
+            <div class="data">
+                <p>El tiempo restante es: <span id="time">60</span></p>
+            </div>
+        </nav>
+    
+        <main>
+            <div id="player">
+    
+            </div>
+        </main>
+    </div>
+
+    <div id="menu">
+        <h1>Bienvenido a Mide Tus Reflejos!</h1>
+        <h2>Seleccione una dificultad:</h2>
+        <ul class="menu-options">
+            <li class="menu-option" onclick="initializeGame(70)">Fácil</li>
+            <li class="menu-option" onclick="initializeGame(135)">Intermedio</li>
+            <li class="menu-option" onclick="initializeGame(200)">Difícil</li>
+        </ul>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
